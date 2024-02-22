@@ -2,6 +2,7 @@
 Automation testing task (UI)
 
 Resource: Democrance
+
 Using the Selenium with base language Java, please create a test with the convenient framework structure for the policy sales journey starting here:
 https://client-platform2.democrance.com/d2c/policy/critical-illness-one-product/form/information
 You can use this sample Emirates ID to test: 784-1000-0000000-0
