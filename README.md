@@ -22,7 +22,6 @@ TestNG framework provides the following features −
 •	Inbuilt reporting.
 
 ## Framework Architecture
-## Framework Architecture
 
  1. src/main/java/com.stcTv- It contains all framework packages
  2.	src/test/java/ - It contains test cases and base class.
