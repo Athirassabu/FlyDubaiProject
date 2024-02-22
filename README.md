@@ -32,6 +32,7 @@ TestNG framework provides the following features −
  7.	It will also support other browsers.
  8.	I have created separate tests and page classes for each pages to show page object model approach.
  9.	I have saved validation data under src/test/resources in config.properties file and testdata.xlsx.
+     
 ## Execution from CMD
 
 •	git clone https://github.com/Athirassabu/DemocranceProjectCode
@@ -39,7 +40,7 @@ TestNG framework provides the following features −
 •	Run mvn clean test in cmd prompt for parallel execution.
 
 ## Execution from IDE
-# Execution is possible from both testng.xml and maven commands so jenkins integration will be easy
+Execution is possible from both testng.xml and maven commands so jenkins integration will be easy
 
 	You can start execution from testing.xml file after cloning the project and see the report in index.html
 	You can run the project from terminal using mvn clean test
