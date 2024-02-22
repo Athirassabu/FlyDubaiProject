@@ -1,5 +1,6 @@
 ## Abstract Idea about the task:
-Automation testing task #1 (UI)
+Automation testing task (UI)
+
 Resource: Democrance
 Using the Selenium with base language Java, please create a test with the convenient framework structure for the policy sales journey starting here:
 https://client-platform2.democrance.com/d2c/policy/critical-illness-one-product/form/information
