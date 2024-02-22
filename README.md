@@ -22,10 +22,17 @@ TestNG framework provides the following features −
 •	Inbuilt reporting.
 
 ## Framework Architecture
-•	src/main/java/com.wsp- It contains all framework packages
-•	src/test/java/ - It contains test cases and base class.
-•	src/test/resources – It contains config file and test data excel.
+## Framework Architecture
 
+ 1. src/main/java/com.stcTv- It contains all framework packages
+ 2.	src/test/java/ - It contains test cases and base class.
+ 3.	src/test/resources – It contains config file.
+ 4.	pom file which has all needed dependency
+ 5.	testng.xml to run the test script
+ 6.	My framework will support parallel execution,I have implemented it with the help of thread local
+ 7.	It will also support other browsers.
+ 8.	I have created separate tests and page classes for each pages to show page object model approach.
+ 9.	I have saved validation data under src/test/resources in config.properties file and testdata.xlsx.
 ## Execution from CMD
 
 •	git clone https://github.com/Athirassabu/WeatherShopperProject
@@ -38,19 +45,11 @@ TestNG framework provides the following features −
 •	You can run mvn clean install Or mvn clean verify Or mvn clean testing cmd for parallel execution from terminal.
 
 ## Set-Up prerequisites.
+1.	Java version - jdk 1.9
+2.	Maven version - apache maven 3.8.1,
+3.	maven-surefire-plugin - 2.14.1
+4.	IntelliJ/Eclipse Cucumber plugins
 
-•	Java version - jdk 1.8.0_281,
-•	Maven version - apache maven 3.8.1,
-•	maven-surefire-plugin - 3.0.0-M1
-•	IntelliJ/Eclipse Cucumber plugins
-
-## Maven Dependencies.
-
-•	Testng - 7.4.0
-•	owner - 1.0.12
-•	junit - 4.13.2
-•	webdrivermanager - 5.0.3
-•	selenium-java - 4.0.0
 
 
 
