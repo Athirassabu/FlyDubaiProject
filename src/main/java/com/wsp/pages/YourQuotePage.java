@@ -18,11 +18,9 @@ import static com.wsp.utils.SeleniumUtils.*;
 
 public class YourQuotePage {
 
-    private static final By termsConditionFirst = By.xpath("(//input[@type='checkbox'])[1]");
-    private static final By termsConditionSecond = By.xpath("(//input[@type='checkbox'])[2]");
     private static final By nextButton = By.xpath("//button[text()='Next: Policy issuance and Payment']");
-    public YourQuotePage clickTermsCondition()
-    {
+
+    public YourQuotePage clickTermsCondition() {
         WebElement termsConditionFirst = getDriver().findElement(By.xpath("(//input[@type='checkbox'])[1]"));
         WebElement termsConditionSecond = getDriver().findElement(By.xpath("(//input[@type='checkbox'])[2]"));
         JavascriptExecutor executor = (JavascriptExecutor) getDriver();
@@ -32,12 +30,12 @@ public class YourQuotePage {
         ExtentLogger.pass("Second terms and condition is clicked successfully");
         return this;
     }
-    public PolicyIssuancePaymentPage clickNextButton()
-    {
+
+    public PolicyIssuancePaymentPage clickNextButton() {
         DriverManager.getDriver().manage().window().fullscreen();
-        WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(),Duration.ofSeconds(ConfigFactory.getConfig().timeout()));
+        WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(ConfigFactory.getConfig().timeout()));
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("loading-background")));
-        click(nextButton,"Next button");
+        click(nextButton, "Next button");
         return new PolicyIssuancePaymentPage();
     }
 

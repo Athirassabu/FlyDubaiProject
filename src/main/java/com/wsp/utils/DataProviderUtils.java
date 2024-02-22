@@ -10,7 +10,7 @@ import java.lang.reflect.Method;
 
 public class DataProviderUtils {
 
-    @DataSupplier(runInParallel = true) //Object[][] or Object[] //json,csv,yaml, excel
+    @DataSupplier(runInParallel = false)
     public StreamEx<TestData> getData(Method method){
         return TestDataReader.use(XlsxReader.class)
                 .withTarget(TestData.class)

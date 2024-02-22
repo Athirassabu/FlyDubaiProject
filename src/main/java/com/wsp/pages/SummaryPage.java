@@ -21,45 +21,43 @@ import static com.wsp.utils.SeleniumUtils.sendKeys;
 
 public class SummaryPage {
 
-    String location=System.getProperty("user.dir")+"/src/test/resources/DownloadFiles";
-    public static String  download;
+    String location = System.getProperty("user.dir") + "/src/test/resources/DownloadFiles";
+    public static String download;
 
     private static final By nextButton = By.xpath("//button[@class='button button-next is-primary is-expanded']");
     private static final By clickGenerateInvoice = By.xpath("//button[@class='button is-fullwidth payment-button']//span[text()='Generate Invoice']");
     private static final By enterPaymentReference = By.xpath("//input[@class='input is-success']");
     private static final By clickContinue = By.xpath("//button[@class='button is-fullwidth is-primary payment-button']");
     private static final By clickDownload = By.xpath("//button[@class='button coiButton']");
-    public SummaryPage clickNextButton()
-    {
+
+    public SummaryPage clickNextButton() {
         WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(ConfigFactory.getConfig().timeout()));
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("loading-background")));
-        click(nextButton,"Next button");
+        click(nextButton, "Next button");
         return this;
     }
 
 
-    public SummaryPage clickGenerateInvoice()
-    {
+    public SummaryPage clickGenerateInvoice() {
 
-        click(clickGenerateInvoice,"Generate Invoice");
-        sendKeys(enterPaymentReference,"12345","PaymentReference");
-        click(clickContinue,"Continue button");
+        click(clickGenerateInvoice, "Generate Invoice");
+        sendKeys(enterPaymentReference, "12345", "PaymentReference");
+        click(clickContinue, "Continue button");
         return this;
     }
 
-    public SummaryPage clickDownload()
-    {
+    public SummaryPage clickDownload() {
 
-        click(clickDownload,"Download button");
+        click(clickDownload, "Download button");
         FluentWait<WebDriver> wait = new FluentWait<WebDriver>(DriverManager.getDriver());
-       wait.withTimeout(Duration.ofMinutes(5))
-            .pollingEvery(Duration.ofSeconds(2));
+        wait.withTimeout(Duration.ofMinutes(5))
+                .pollingEvery(Duration.ofSeconds(2));
         wait.until(x -> {
             File folder = new File(location);
             File[] filesInDir = folder.listFiles();
             for (File fileInDir : filesInDir) {
                 if (fileInDir.getName().startsWith("COI-UAE")) {
-                   ExtentLogger.pass("File is downloaded successfully and waited until its downloaded using fluent wait");
+                    ExtentLogger.pass("File is downloaded successfully and waited until its downloaded using fluent wait");
                     return true;
                 }
             }
@@ -70,8 +68,8 @@ public class SummaryPage {
         for (File listofFile : listofFiles) {
             if (listofFile.isFile()) {
                 String fileName = listofFile.getName();
-                 download=System.getProperty("user.dir")+"/src/test/resources/DownloadFiles/"+fileName+"";
-                ExtentLogger.pass("Downloaded file name :"+fileName+" Downloaded file is available in location:"+location);
+                download = System.getProperty("user.dir") + "/src/test/resources/DownloadFiles/" + fileName + "";
+                ExtentLogger.pass("Downloaded file name :" + fileName + " Downloaded file is available in location:" + location);
             }
         }
 
@@ -91,6 +89,6 @@ public class SummaryPage {
                 }
             }
         }
-    return isFileAvailable;
+        return isFileAvailable;
     }
 }

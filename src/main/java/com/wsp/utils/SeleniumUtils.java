@@ -22,18 +22,10 @@ public final class SeleniumUtils {
         element.click();
         ExtentLogger.pass(elementName + " is clicked successfully");
     }
-    public static void selectByVisibleText(By by,String text,String elementName){
-       Select ele=new Select(DriverManager.getDriver().findElement(by));
-       ele.selectByVisibleText(text);
-       ExtentLogger.pass(elementName + " is selected successfully");
-    }
+
     public static void getTitle(String title){
+
         ExtentLogger.pass(title + "Title is displayed successfully");
-    }
-
-    public static void click(WebElement element){
-
-        element.click();
     }
 
     public static void click(By by, WaitType waitType){
@@ -54,11 +46,6 @@ public final class SeleniumUtils {
         ExtentLogger.pass(value + " is entered "+ " successfully in "+elementName);
     }
 
-    public static void javaScriptSenkeys(String id,String value,String elementName){
-        JavascriptExecutor js=(JavascriptExecutor) DriverManager.getDriver();
-        js.executeScript("document.getElementById('"+id+"').value='"+value+"';");
-        ExtentLogger.pass(value + " is entered "+ " successfully in "+elementName);
-    }
 
 
     public static WebElement waitUntilElementToBeVisible(By by) {

@@ -13,7 +13,7 @@ public class DataSupplierTest {
     public void dataSupplierTest(TestData testData) {
     }
 
-    @DataSupplier //Object[][] or Object[] //json,csv,yaml, excel
+    @DataSupplier
     public StreamEx<TestData> getData(){
         return TestDataReader.use(XlsxReader.class)
                 .withTarget(TestData.class)
