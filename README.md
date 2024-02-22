@@ -34,14 +34,15 @@ TestNG framework provides the following features −
  9.	I have saved validation data under src/test/resources in config.properties file and testdata.xlsx.
 ## Execution from CMD
 
-•	git clone https://github.com/Athirassabu/WeatherShopperProject
-•	cd weathershopper
+•	git clone https://github.com/Athirassabu/DemocranceProjectCode
+•	cd DemocranceProjectCode
 •	Run mvn clean test in cmd prompt for parallel execution.
 
 ## Execution from IDE
+# Execution is possible from both testng.xml and maven commands so jenkins integration will be easy
 
-•	You can start execution from testing.xml file.
-•	You can run mvn clean install Or mvn clean verify Or mvn clean testing cmd for parallel execution from terminal.
+	You can start execution from testing.xml file after cloning the project and see the report in index.html
+	You can run the project from terminal using mvn clean test
 
 ## Set-Up prerequisites.
 1.	Java version - jdk 1.9
