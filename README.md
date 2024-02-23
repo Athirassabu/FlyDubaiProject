@@ -47,7 +47,7 @@ TestNG framework provides the following features −
 ## Execution from IDE
 Execution is possible from both testng.xml and maven commands so jenkins integration will be easy
 
-	You can start execution from testing.xml file after cloning the project and see the report in index.html
+	You can start execution from testng.xml file after cloning the project and see the report in index.html
 	You can run the project from terminal using mvn clean test
 
 ## Set-Up prerequisites.
