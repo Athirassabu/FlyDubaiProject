@@ -32,6 +32,11 @@ TestNG framework provides the following features −
  7.	It will also support other browsers.
  8.	I have created separate tests and page classes for each pages to show page object model approach.
  9.	I have saved validation data under src/test/resources in config.properties file and testdata.xlsx.
+
+
+## Web Report
+
+ <img src="WebResult.png">
      
 ## Execution from CMD
 
