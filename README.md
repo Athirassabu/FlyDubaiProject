@@ -23,7 +23,7 @@ TestNG framework provides the following features −
 
 ## Framework Architecture
 
- 1. src/main/java/com.stcTv- It contains all framework packages
+ 1. src/main/java/com.wsp- It contains all framework packages
  2.	src/test/java/ - It contains test cases and base class.
  3.	src/test/resources – It contains config file.
  4.	pom file which has all needed dependency
