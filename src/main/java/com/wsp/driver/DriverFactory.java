@@ -25,8 +25,9 @@ public final class DriverFactory {
             HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
             chromePrefs.put("download.default_directory",location);
             ChromeOptions options = new ChromeOptions();
-            options.setExperimentalOption("prefs", chromePrefs);
-          driver = new ChromeDriver(options);
+          //  options.setExperimentalOption("prefs", chromePrefs);
+            options.addArguments("disable-notifications");
+            driver = new ChromeDriver(options);
 
         }
         else if(browserName.equalsIgnoreCase("edge")){

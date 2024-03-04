@@ -6,7 +6,7 @@
     </listeners>
     <test parallel="classes" thread-count="1" name="SeleniumFramework">
         <classes>
-            <class name="com.wsp.tests.DemocrancePolicyJourney"/>
+            <class name="com.wsp.tests.CompleteFlightBooking"/>
         </classes>
     </test>
 </suite>
