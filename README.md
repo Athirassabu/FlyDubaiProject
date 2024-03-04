@@ -1,13 +1,10 @@
 ## Abstract Idea about the task:
 Automation testing task (UI)
 
-Resource: Democrance
+Resource: Fly Dubai
 
-Using the Selenium with base language Java, please create a test with the convenient framework structure for the policy sales journey starting here:
-https://client-platform2.democrance.com/d2c/policy/critical-illness-one-product/form/information
-You can use this sample Emirates ID to test: 784-1000-0000000-0
-Phone number: You can enter any phone number of 9 digits starting with 50/56/58.
-At the end to land on the confirmation page, you can choose the General Invoice option with any random 4 or 5-digit number.
+Using the Selenium with base language Java, please create a test with the convenient framework structure for flight booking:
+
 
 Please ensure that you can download the policy schedule at the end of the journey.
 # selenium-TestNG-java-maven
