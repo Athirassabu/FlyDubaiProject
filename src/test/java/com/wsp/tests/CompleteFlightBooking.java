@@ -18,7 +18,7 @@ public class CompleteFlightBooking extends BaseTest {
     @FrameworkAnnotation
     @Test(description = "To check complete flight booking flow",
             dataProvider = "getData", dataProviderClass = DataProviderUtils.class)
-    public void completePolicySalesJourney(TestData testdata) {
+    public void completeFlightJourney(TestData testdata) {
        bhp.acceptCookies().selectDestination().clickDateRange().clickSearch().clickLowFare().getPrice();
        fdp.clickContinuePassengerDetails();
 
