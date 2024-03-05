@@ -5,13 +5,21 @@ Resource: Fly Dubai
 Test case automated steps
 
 1.Login to url https://qa1-flydubai.np.flydubai.com/en/
+
 2.Destination and origin city is selected
+
 3.Start and end date is selected
+
 4.Search is clicked successfully
+
 5.Cheap outbound and inbound flight is selected
+
 6.Click continue passenger details is clicked
+
 7.Details of the passenger is entered successfully
+
 8.Go to review booking confirmation page
+
 9.Validate total fare matching with the fare displayed before.
 
 Using the Selenium with base language Java, please create a test with the convenient framework structure for flight booking:
