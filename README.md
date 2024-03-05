@@ -5,8 +5,6 @@ Resource: Fly Dubai
 
 Using the Selenium with base language Java, please create a test with the convenient framework structure for flight booking:
 
-
-Please ensure that you can download the policy schedule at the end of the journey.
 # selenium-TestNG-java-maven
 Automation Testing Using Java, Selenium with TestNg.
 TestNG is a powerful testing framework, an enhanced version of JUnit which was in use for a long time before TestNG came into existence. NG stands for 'Next Generation'.
@@ -37,8 +35,8 @@ TestNG framework provides the following features −
      
 ## Execution from CMD
 
-•	git clone https://github.com/Athirassabu/DemocranceProjectCode
-•	cd DemocranceProjectCode
+•	git clone https://github.com/Athirassabu/FlyDubaiProject
+•	cd FlyDubaiProject
 •	Run mvn clean test in cmd prompt for parallel execution.
 
 ## Execution from IDE
