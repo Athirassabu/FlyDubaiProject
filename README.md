@@ -2,7 +2,8 @@
 Automation testing task (UI)
 
 Resource: Fly Dubai
-Test case automated steps
+
+## Test case automated steps
 
 1.Login to url https://qa1-flydubai.np.flydubai.com/en/
 
