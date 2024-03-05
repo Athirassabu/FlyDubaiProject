@@ -18,7 +18,7 @@ public class CompleteFlightBooking extends BaseTest {
 
 
     @FrameworkAnnotation
-    @Test(description = "To check complete flight booking flow",
+    @Test(description = "To check complete flight booking flow for fly dubai",
             dataProvider = "getData", dataProviderClass = DataProviderUtils.class)
     public void completeFlightJourney(TestData testdata) {
         bhp.acceptCookies().selectOrigin(testdata.originCity).selectDestination(testdata.destinationCity).clickOriginDateRange(testdata.originMonth,testdata.originYear, testdata.originDate).clickDestinationDate(testdata.destMonth,testdata.destYear,testdata.destDate).clickSearch().clickLowFare().clickContinuePassengerDetails().enterPassengerDetails(testdata.firstName,testdata.lastName,testdata.email,testdata.gender,testdata.country,testdata.number);
