@@ -23,7 +23,7 @@ Resource: Fly Dubai
 
 9.Validate total fare matching with the fare displayed before.
 
-Using the Selenium with base language Java, please create a test with the convenient framework structure for flight booking:
+Selenium based java framework is created with testng it supports parallel execution and cross browser testing
 
 # selenium-TestNG-java-maven
 Automation Testing Using Java, Selenium with TestNg.
