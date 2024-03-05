@@ -31,7 +31,7 @@ TestNG framework provides the following features −
 
 ## Web Report
 
- <img src="WebResult.png">
+ <img src="UI-Result.png">
      
 ## Execution from CMD
 
