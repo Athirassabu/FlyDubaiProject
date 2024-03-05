@@ -26,8 +26,8 @@ public final class DriverFactory {
             chromePrefs.put("download.default_directory",location);
             ChromeOptions options = new ChromeOptions();
           //  options.setExperimentalOption("prefs", chromePrefs);
-            //options.addArguments("disable-notifications");
-            options.addArguments("--disable-cookies");
+            options.addArguments("disable-notifications");
+            //options.addArguments("--disable-cookies");
             //options.addArguments("profile.default_content_setting_values.cookies", 2);
             driver = new ChromeDriver(options);
 
