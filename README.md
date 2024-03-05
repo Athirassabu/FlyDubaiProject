@@ -35,8 +35,8 @@ TestNG framework provides the following features −
      
 ## Execution from CMD
 
-•	git clone https://github.com/Athirassabu/DemocranceProjectCode
-•	cd DemocranceProjectCode
+•	git clone https://github.com/Athirassabu/FlyDubaiProject
+•	cd FlyDubaiProject
 •	Run mvn clean test in cmd prompt for parallel execution.
 
 ## Execution from IDE
