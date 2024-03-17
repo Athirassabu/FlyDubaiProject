@@ -1,0 +1,21 @@
+{
+  "journeyType": "ow",
+  "cabinClass": "Economy",
+  "isOriginMetro": true,
+  "isDestMetro": false,
+  "searchCriteria": [
+    {
+      "origin": "DXB",
+      "dest": "MCT",
+      "isOriginMetro": true,
+      "isDestMetro": false,
+      "direction": "outBound",
+      "date": "5/30/2024 12:00 AM"
+    }
+  ],
+  "paxInfo": {
+    "adultCount": 2,
+    "infantCount": 0,
+    "childCount": 0
+  }
+}

@@ -38,6 +38,8 @@ public class TestData {
     public String country;
     @Column(name="number",index=14)
     public String number;
+    @Column(name="direction",index=15)
+    public String direction;
 
 
 }
