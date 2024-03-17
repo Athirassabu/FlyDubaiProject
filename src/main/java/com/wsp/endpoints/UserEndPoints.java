@@ -22,6 +22,8 @@ public class UserEndPoints {
 				.post(Routes.post_url);
 			ExtentLogger.pass("The status of the request is:"+response.statusCode());
 			ExtentLogger.pass("Payload passed is"+payload);
+			ExtentLogger.pass("Security token from response is : "+response.header("securityToken"));
+			ExtentLogger.pass("Response payload is"+response.asString());
 			return response;
 		}
 		
